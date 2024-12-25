@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body{
+            padding-top: 120px;
+            padding-left: 150px;
+        }
+         .header{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgb(251, 248, 248);
+            z-index: 10;
+            
+            
+        }
+        .left-section{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            margin-right:20px ;
+            margin-left: 10px;
+            
+        }
+        .hamburger-menu{
+            width: 30px;
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+        .yt-logo{
+            width: 130px ;
+            
+        }
+        .mid-section{
+            width: 600px; 
+            display: flex;
+            align-items: center;
+            max-width: 500px;
+        }
+        .search-bar{
+            border-radius: 2px;
+            height: 40px;
+            flex: 1;
+            width: 0;   
+            border-color: rgb(205, 204, 204);
+            border-style: solid;
+            border-width: 1px;
+            font-size: 20px;
+
+            
+        }
+        .search-bar::placeholder{
+            font-size: 20px;
+              
+
+        }
+        .search-button{
+            height: 44px;
+            width: 40px;
+            margin-left: -2px;
+            border-radius: 2px;
+            border-color: rgb(205, 204, 204);
+            border-style: solid;
+            border-width: 1px;
+
+            
+        }
+        .voice-search-button{
+            height: 45px;
+            width: 45px;
+            margin-left: 30px;
+            border-radius: 100%;
+            border: none;
+            
+        }
+        .right-section{
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            flex-shrink: 0;
+            margin-left: 30px;
+        }
+        #camera-icon{
+            width: 40px;
+        }
+        #grid-icon{
+            width: 40px;
+        }
+        #bell-icon{
+            width: 40px;
+            position: relative;
+        }
+        #user-pic{
+            width: 50px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body style="height: 3000px;">
+
+    <div class="header">
+            <div class="left-section">
+            <img src="https://supersimple.dev/public/img/exercises/youtube/icons/hamburger-menu.svg" class="hamburger-menu">
+            <img src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-logo.svg" class="yt-logo" >
+        </div> 
+        
+        <div class="mid-section">
+            <input type="text" placeholder="search" class="search-bar">
+
+            <button class="search-button">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/search.svg" class="search-icon">
+            </button>
+    
+            <button class="voice-search-button">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/voice-search-icon.svg"class="voice-search-icon">
+            </button>
+        </div>
+        
+        <div class="right-section">
+            <img src="https://supersimple.dev/public/img/exercises/youtube/icons/upload.svg" 
+            id="camera-icon">
+            <img src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-apps.svg"
+            id="grid-icon">
+            <div style="display: inline-block;">
+            <img src="https://supersimple.dev/public/img/exercises/youtube/icons/notifications.svg"
+            id="bell-icon">
+                <div style="
+            position: absolute;
+            background-color: black;
+            color: white;
+            border-radius: 100%;
+            font-size: small;
+            padding: 1px 5px 1px 5px;
+            top: 20px;
+            right: 80px;
+            
+            ">
+             3
+            </div>
+            </div>
+            <img src="https://yt3.ggpht.com/yti/ANjgQV-fisNEeuGv70zmpy_WtOVdzEWlp0qoxJ9f-R3rPFgQ6GI=s88-c-k-c0x00ffffff-no-rj"
+            id="user-pic">
+        </div>
+        <div style="
+        background-color: rgb(242, 174, 174);
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        right: 650px;
+        bottom: 0px;
+        
+        ">
+        <div style="
+        position: absolute;
+        background-color: blueviolet;
+        color: white;
+        left: 15px;
+        top: 10px;
+
+        ">
+        absolute  
+        </div>
+        
+        </div>
+
+    </div>
+
+    <div style="
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    ">
+    div1
+
+    </div >
+
+    <div style="
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    ">
+    
+        div2
+
+        <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        bottom: 10px;
+        right: 10px;
+        ">
+        5:00 
+        </div>
+        
+    </div>
+
+</body>
+</html>
